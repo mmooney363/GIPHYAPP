@@ -29,7 +29,7 @@ function handleApiRes(response) {
 
 function makeGifs(event) {
   const car = event.target.getAttribute('data-name');
-  const queryUrl = `http://api.giphy.com/v1/gifs/search?q=${car}&api_key=qPP6DrSoZK3pIKpDdWO3IOTGcjM3sWYn&limit=10`;
+  const queryUrl = `https://api.giphy.com/v1/gifs/search?q=${car}&api_key=qPP6DrSoZK3pIKpDdWO3IOTGcjM3sWYn&limit=10`;
 
   $.ajax({
     url: queryUrl,
